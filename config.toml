@@ -1,0 +1,14 @@
+baseurl = "http://ps-admin.github.io"
+languageCode = "en-us"
+title = "psadm.in"
+canonifyurls = true
+
+# Directories
+contentdir = "content"
+layoutdir = "layouts"
+publishdir = "public"
+builddrafts = false
+
+[params]
+  description = "psadm.in"
+  author = "JR Bing"
