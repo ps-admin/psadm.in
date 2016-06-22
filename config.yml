@@ -1,0 +1,10 @@
+title: "psadm.in"
+languageCode: "en-us"
+baseurl: "http://ps-admin.github.io"
+#baseurl: "ML0C02NL2MDG3QP.int.iscmotorsports.com:1313"
+copyright: "Copyright (c) 2016, JR Bing; all rights reserved."
+MetaDataFormat: "yaml"
+
+params:
+  description: "psadm.in"
+  author: "JR Bing"
