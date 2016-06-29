@@ -1,0 +1,23 @@
+    <div class="title-bar" data-responsive-toggle="navigation-menu" data-hide-for="medium">
+      <button class="menu-icon" type="button" data-toggle></button>
+      <div class="title-bar-title">Menu</div>
+    </div>
+
+    <div class="top-bar" id="example-menu">
+      <div class="top-bar-left">
+        <ul class="dropdown menu" data-dropdown-menu>
+          <li><a href="/">About</a></li>
+          <!--<li><a href="/posts">Posts</a></li>-->
+          <li class="has-submenu">
+            <a href="/projects">Projects</a>
+            <ul class="submenu menu vertical" data-submenu>
+              {{ range .Site.Pages }}
+                {{ if eq .Type "projects" }}
+                <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+                {{ end }}
+              {{ end }}
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>

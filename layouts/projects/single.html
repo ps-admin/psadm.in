@@ -1,0 +1,37 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+{{ partial "head.html" . }}
+
+<body>
+
+  {{ partial "navigation.html" . }} {{ partial "header.html" . }}
+
+
+  <div class="row medium-8 large-7 columns">
+    <div class="row" data-equalizer data-equalize-on="medium" id="test-eq">
+      <div class="medium-8 columns">
+        <div class="callout" data-equalizer-watch>
+          <h2>{{ .Title }}</h2>
+          <p>{{ .Description }}</p>
+        </div>
+      </div>
+      <div class="medium-4 columns">
+        <div class="callout" data-equalizer-watch>
+          <!--<img src="{{ .Site.BaseURL }}images/logo.svg">-->
+          <img class="thumbnail" src="{{ .Site.BaseURL }}images/{{ .Params.logo }}">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row medium-8 large-7 columns">
+    <hr>
+    {{ .Content }}
+  </div>
+
+  {{ partial "footer.html" . }}
+
+</body>
+
+</html>

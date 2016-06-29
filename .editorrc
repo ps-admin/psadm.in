@@ -1,0 +1,23 @@
+# EditorConfig
+
+# Properties supported by the editorconfig-vim plugin
+#   * indent_style [tab,space]
+#   * indent_size
+#   * tab_width
+#   * end_of_line
+#   * charset [latin1, utf-8, utf-16be, utf-16le]
+#   * trim_trailing_whitespace [true, false]
+#   * insert_final_newline [true, false]
+#   * max_line_length [integer, off]
+
+# top-most EditorConfig file
+root = true
+
+# Unix-style newlines, a newline ending every file, and utf-8
+[*]
+end_of_line = lf
+insert_final_newline = true
+charset = utf-8
+indent_style = space
+indent_size = 2
+end_of_line = lf
