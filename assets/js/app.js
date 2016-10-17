@@ -1,24 +1,14 @@
-//////////////
 //  Styles  //
-//////////////
-
 require('../scss/app.scss'); // Global stylesheet
 
-//////////////
 //  Images  //
-//////////////
-
 require('../images/logo.svg');
 require('../images/sparky.svg');
 require('../images/voodoo.svg');
 require('../images/rundeck_plugins.svg');
 
-//////////////////
 //  Javascript  //
-//////////////////
-
 import 'script!jquery';
-
 import 'what-input/what-input.js';
 import 'babel!foundation-sites/js/foundation.core.js';
 import 'babel!foundation-sites/js/foundation.abide.js';
@@ -57,5 +47,3 @@ $(document).ready(function ($) {
     hljs.highlightBlock(block);
   });
 });
-
-//hljs.initHighlightingOnLoad();

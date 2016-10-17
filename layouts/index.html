@@ -5,20 +5,10 @@
 
   <body>
 
-  {{ partial "navigation.html" . }} {{ partial "header.html" . }}
+  {{ partial "header.html" . }}
 
   <div class="row medium-8 large-7 columns">
-    <div class="row" data-equalizer data-equalize-on="medium" id="test-eq">
-      <div class="medium-9 columns">
-        <div class="callout" data-equalizer-watch>
-          <h4>Hello.</h4>
-          <p>
-          PSADM.IN is a small site I built to host some of the PeopleSoft-related
-          projects I've built over the years.  I hope you find them useful, and please
-          let me know if you have suggestions for improvements.
-          </p>
-        </div>
-      </div>
+    <div class="row align-center" data-equalizer data-equalize-on="medium" id="test-eq">
       <div class="medium-3 columns">
         <div class="callout" data-equalizer-watch>
           <img src="{{ .Site.BaseURL }}images/logo.svg">

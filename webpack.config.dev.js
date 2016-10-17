@@ -6,6 +6,9 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const precss = require('precss');
 const autoprefixer = require('autoprefixer');
 const validate = require('webpack-validator');
+const Dashboard = require('webpack-dashboard');
+const DashboardPlugin = require('webpack-dashboard/plugin');
+const dashboard = new Dashboard();
 
 const GLOBALS = {
   'process.env.NODE_ENV': JSON.stringify('development'),
@@ -24,7 +27,19 @@ module.exports = [{
   context: __dirname,
   devtool: 'cheap-module-eval-source-map',
   stats: {
-    errorDetails: true
+    hash: false,
+    version: false,
+    timings: false,
+    assets: false,
+    chunks: false,
+    modules: false,
+    reasons: false,
+    children: false,
+    source: false,
+    errors: false,
+    errorDetails: false,
+    warnings: false,
+    publicPath: false
   },
   entry: {
     app: PATHS.app
@@ -83,6 +98,7 @@ module.exports = [{
     new webpack.DefinePlugin(GLOBALS),
     new CopyWebpackPlugin([
       { from: PATHS.fonts, to: 'fonts' }
-    ])
+    ]),
+    new DashboardPlugin(dashboard.setData)
   ]
 }];

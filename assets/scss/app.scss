@@ -75,3 +75,8 @@
     transition-delay: initial
   }
 }
+
+// Fix for title bar showing on page load
+.title-bar {
+  display: none;
+}
